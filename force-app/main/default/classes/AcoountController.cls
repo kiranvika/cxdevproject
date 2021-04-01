@@ -10,5 +10,6 @@ public with sharing class AcoountController {
         acc.Rating=rating;
         insert acc;
     }
+    
 }
 
