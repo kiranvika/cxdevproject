@@ -11,5 +11,11 @@ public class AcoountControllerTest {
         Integer count = [SELECT COUNT() from Account where name=:acc.name];
         System.assertEquals(1, count);
     }
+    @isTest
+    static void testInvoke(){
+        AcoountController ac = new AcoountController();
+        system.assertEquals('Energy',ac.industry);
+        system.assertEquals('Hot',ac.rating);
+    }
    
 }
