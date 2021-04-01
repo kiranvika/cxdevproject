@@ -3,7 +3,7 @@ public class AcoountControllerTest {
 
     @isTest
     static void testMe(){
-        Account_Insert acc = new Account_Insert();
+        AcoountController acc = new AcoountController();
         acc.name = 'test';
         acc.industry = 'Banking';
         acc.rating = 'Hot';
@@ -11,6 +11,4 @@ public class AcoountControllerTest {
         Integer count = [SELECT COUNT() from Account where name=:acc.name];
         System.assertEquals(1, count);
     }
-}
-
 }
