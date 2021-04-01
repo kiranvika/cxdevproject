@@ -14,6 +14,7 @@ public class AcoountControllerTest {
     @isTest
     static void testInvoke(){
         AcoountController ac = new AcoountController();
+        ac.invoke();
         system.assertEquals('Energy',ac.industry);
         system.assertEquals('Hot',ac.rating);
     }
